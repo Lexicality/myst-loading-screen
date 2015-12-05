@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Linking to Evocity . . .</title>
+<style type="text/css">
+<!--
+#YoutubeHolder {
+	height: 270px; /* -25 */
+	overflow: hidden;
+	width: 356px;
+	top: 63px;
+	right: 198px;
+	position: absolute;
+	z-index:0;
+}
+#YoutubeHolder * {
+	z-index:0;
+}
+#BookBackage {
+	background-image: url(book_background.png);
+	background-repeat: no-repeat;
+	height: 602px;
+	width: 1271px;
+	position: absolute;
+	top: 50px;
+	right: 4px;
+}
+body {
+	background-color: #000;
+}
+#BookFrontage {
+	height: 288px;
+	width: 411px;
+	top: 63px;
+	right: 170px;
+	position: absolute;
+	z-index:10;
+}
+-->
+</style><script type="text/javascript">
+<!--
+function onLoadAdjust() {
+	var width = window.innerWidth;
+	if (width > 1271) {
+		var offset = Math.floor((width - 1271) / 2);
+		document.getElementById("BookBackage").style.right = offset+"px";
+	}
+	var height = window.innerHeight;
+	if (height > 602) {
+		var offset = Math.floor((height - 602) / 2);
+		document.getElementById("BookBackage").style.top = offset+"px";
+	}
+}
+//-->
+</script>
+</head>
+
+<body onload="onLoadAdjust()">
+<div id="BookBackage">
+  <div id="YoutubeHolder">
+    <object width="356" height="295">
+      <param name="movie" value="http://www.youtube.com/v/H4ThWUcynnE?fs=1&amp;hl=en_US&amp;rel=0&amp;autoplay=1&amp;loop=1">
+      </param>
+      <param name="allowFullScreen" value="false">
+      </param>
+      <param name="allowscriptaccess" value="always">
+      </param>
+      <param name="wmode" value="transparent">
+      </param>
+      <embed src="http://www.youtube.com/v/H4ThWUcynnE?fs=1&amp;hl=en_US&amp;rel=0&amp;autoplay=1&amp;loop=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="false" width="356" height="295" wmode="transparent"></embed>
+    </object>
+  </div>
+  <div id="BookFrontage"> <img src="book_foreground.png" width="411" height="288" /> </div>
+</div>
+</body>
+</html>
