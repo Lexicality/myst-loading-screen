@@ -1,2 +1,2 @@
-# myst-loading-screen
-It's a myst themed loading screen for Garry's Mod
+# Myst Loading Screen
+It's a Myst themed loading screen for Garry's Mod
